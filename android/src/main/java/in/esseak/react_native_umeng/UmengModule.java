@@ -162,6 +162,7 @@ public class UmengModule extends ReactContextBaseJavaModule {
     }
 
 
+    @SuppressLint("MissingPermission")
     public static String mGetDeviceInfo(Context context) {
         try {
             org.json.JSONObject json = new org.json.JSONObject();
