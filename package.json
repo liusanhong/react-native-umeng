@@ -1,15 +1,24 @@
 {
-  "name": "rn-umeng",
-  "version": "1.0.6",
-  "description": "RN-Umeng",
+  "name": "react-native-umeng-rcat",
+  "version": "1.0.0",
+  "description": "umeng最新的jar包",
   "main": "main.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react native",
-    "umeng"
+    "umeng",
+    "react-native-umeng"
   ],
-  "author": "mike",
-  "license": "MIT"
+  "author": "liusanhong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liusanhong/react-native-umeng.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liusanhong/react-native-umeng/issues"
+  },
+  "homepage": "https://github.com/liusanhong/react-native-umeng#readme"
 }

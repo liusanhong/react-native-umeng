@@ -3,6 +3,7 @@
 A Umeng lib for React Native
 
 # iOS Install
+npm install react-native-umeng-rcat --save
 
 在 `package.json` 里添加:  
 
@@ -99,29 +100,6 @@ MobclickAgent.setDebugMode(true);
 MobclickAgent.onEvent("testEvent");
 ```
 
-
-# Changelog
-
-
-### - 1.0.6
- - support RN 0.40
-
-### - 1.0.5
-
- - fix error in LazyReactPackage
-
-### - 1.0.4
-
- - add Android channel set
-
-### - 1.0.3
-
- - add Android lib (but Manually,rnpm link not works,fix later)
- - update readme.md
-
-
-### - 1.0.2
- - Project initialization
 
 # License
 MIT
