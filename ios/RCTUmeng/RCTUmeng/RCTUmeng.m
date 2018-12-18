@@ -2,14 +2,12 @@
 //  RCTUmeng.m
 //  RCTUmeng
 //
-//  Created by aevit on 2017/7/26.
-//  Copyright © 2017年 aevit. All rights reserved.
+//  Created by Mike on 16/3/30.
+//  Copyright © 2016年 hyz. All rights reserved.
 //
 
 #import "RCTUmeng.h"
-
-#import <UMMobClick/MobClick.h>
-//#import "MobClick.h"
+#import "MobClick.h"
 
 
 @implementation RCTUmeng
@@ -33,9 +31,7 @@ RCT_EXPORT_METHOD(enableEncrypt:(BOOL)value)
 
 RCT_EXPORT_METHOD(startWithAppkey:(NSString *)appkey)
 {
-    UMConfigInstance.appKey = appkey;
-    [MobClick startWithConfigure:UMConfigInstance];
-    //    [MobClick startWithAppkey:appkey];
+    [MobClick startWithAppkey:appkey];
 }
 
 RCT_EXPORT_METHOD(setAppVersion:(NSString*)version)
@@ -77,7 +73,7 @@ RCT_EXPORT_METHOD(onPageEnd:(NSString *)pageName)
 RCT_EXPORT_METHOD(logPageView:(NSString *)pageName seconds:(int)seconds)
 {
     [MobClick logPageView:pageName seconds:seconds];
-    
+
 }
 
 RCT_EXPORT_METHOD(onEvent:(NSString *)eventId attributes:(NSDictionary *)attributes counter:(NSString *)counter)
@@ -108,5 +104,6 @@ RCT_EXPORT_METHOD(getDeviceInfo:(RCTResponseSenderBlock)callback)
     NSString *strInfo = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     callback(@[strInfo]);
 }
+
 
 @end
