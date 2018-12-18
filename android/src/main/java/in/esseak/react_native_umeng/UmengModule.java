@@ -35,33 +35,33 @@ public class UmengModule extends ReactContextBaseJavaModule {
         return "Umeng";
     }
 
-    @ReactMethod
-    public void startWithAppkey(String value){
-        if (!startedWithAppkey){
-            AnalyticsConfig.setAppkey(context,value);
-            AnalyticsConfig.setChannel("android");
-            startedWithAppkey = true;
-        }
-    }
+//    @ReactMethod
+//    public void startWithAppkey(String value){
+//        if (!startedWithAppkey){
+//            AnalyticsConfig.setAppkey(context,value);
+//            AnalyticsConfig.setChannel("android");
+//            startedWithAppkey = true;
+//        }
+//    }
 
-    @ReactMethod
-    public void startWithAppkeyAndChannel(String value,String channel){
-        if (!startedWithAppkey){
-            AnalyticsConfig.setAppkey(context,value);
-            AnalyticsConfig.setChannel(channel);
-            startedWithAppkey = true;
-        }
-    }
+//    @ReactMethod
+//    public void startWithAppkeyAndChannel(String value,String channel){
+//        if (!startedWithAppkey){
+//            AnalyticsConfig.setAppkey(context,value);
+//            AnalyticsConfig.setChannel(channel);
+//            startedWithAppkey = true;
+//        }
+//    }
 
     @ReactMethod
     public void setCrashReportEnabled(Boolean value){
         MobclickAgent.setCatchUncaughtExceptions(value);
     }
 
-    @ReactMethod
-    public void enableEncrypt(Boolean value){
-        AnalyticsConfig.enableEncrypt(value);
-    }
+//    @ReactMethod
+//    public void enableEncrypt(Boolean value){
+//        AnalyticsConfig.enableEncrypt(value);
+//    }
 
     @ReactMethod
     public void onPageStart(String pageName){
